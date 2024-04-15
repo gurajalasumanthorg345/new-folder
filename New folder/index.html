@@ -1,0 +1,167 @@
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUMAN</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .scrollright {
+            font-weight: bold;
+            color: #ff6600;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <h1>SUMAN</h1>
+    
+    
+        <nav>
+            <button onclick="toggleSection('home')">Home</button>
+            <button onclick="toggleSection('sum')">Images</button>
+            <button onclick="toggleSection('ABOUT')">About</button>
+            <button onclick="toggleSection('CONTACT')">Contact</button>
+            <button onclick="toggleSection('SOCIALMEDIA')">Social Media</button>
+        </nav>
+        </header>
+           
+    
+        <main>
+            <div id="home">
+                <h1>GURAJALA SUMAN </h1>
+                <p style="font-size: large; text-align: center;border: violet; font-size: 56px; font-family: 'Times New Roman', Times, serif;">SUMMARY<br>
+                    <img id="slide"  src="C:\Users\USER\Downloads\images (2).jpg" width="500px" height="px">
+                  Through out my carrer ,I improve my knowledge and develop the skills.I want to get the software job in 
+                  software company .It is my dream.I know the technical skills are the python ,django,html,css,javascript,mysql.
+                  I develop the my communication skills.
+                </p>
+                <img id="C:\Users\USER\Downloads\WhatsApp Image 2024-01-30 at 7.06.25 PM.jpeg" src="C:\Users\USER\Downloads\WhatsApp Image 2024-01-30 at 7.06.25 PM.jpeg" alt="">
+            </div>
+            <div id="sum">
+                <h1>Images</h1>
+                <img src="C:\Users\USER\Downloads\WhatsApp Image 2024-01-29 at 10.57.57 AM.jpeg" alt="" width="100px" height="200px">
+                <img src="C:\Users\USER\Downloads\WhatsApp Image 2024-01-29 at 10.57.57 AM (1).jpeg" alt="" width="100px" height="200px">
+            </div>
+    
+            <div id="ABOUT">
+                <h1>ABOUT</h1>
+                <p>About me,
+                    My name is Suman, I am from Chittoor.
+                    I completed my B. Tech at Vemu Institute of Technology, under JNTUA Ananthapur University.
+                    I am a CSE background student.
+                    My Technical skills include C, PYTHON, DJANGO, HTML, CSS, JAVASCRIPT, and MYSQL.
+                    My strengths are self-motivation, self-respect, and positive thinking.
+                    My short-term goal is to get a job, and my long-term goal is to become a software developer.
+                    My Hobbies include swimming, listening to music, and playing carrom.
+                </p>
+            </div>
+    
+            <div id="CONTACT">
+                <h1>CONTACT</h1>
+                <p>Email: gurajalasumanth31@gmail.com</p>
+                <p>Contact Number: 9347448014</p>
+                <label>Email id:</label>
+                <input type="text" name="email id" placeholder="">
+                <!-- <span class="email id">email id</span>-->  <br>
+                <pre>
+                </pre>
+                <label>User name:</label>
+                <input type="text" name="email id" placeholder="">
+                <!-- <span class="email id">email id</span>--><br>
+                <pre>    
+                </pre>
+                <label>password:</label>
+                <input type="password" name="password" placeholder="">
+                <!-- <span class="password">password</span>--><br>
+                <label>Confirm password</label>
+                <input type="password" name="password" placeholder="">
+                <!-- <span class="password">Remember password</span>--><br>
+                <button type="button" action="#">Login</button>
+            </div>
+    
+            <div id="SOCIALMEDIA">
+                <h1>SOCIAL MEDIA</h1>
+                <img src="C:\Users\USER\Downloads\download (2).png" alt="" width="20px" heigth="15px">
+                <a href="https://www.linkedin.com">LINKEDIN</a><br>
+                <img src="C:\Users\USER\Downloads\download (5).jpg" alt="" width="20px" heigth="15px">
+                <a href="https://www.facebook.com">FACEBOOK</a><br>
+                <img src="C:\Users\USER\Downloads\download (6).jpg" alt="" width="20px" heigth="15px">
+                <a href="https://www.instagram.com">INSTAGRAM</a><br>
+                <img src="C:\Users\USER\Downloads\WhatsApp.svg.png" alt="" width="20px" heigth="15px">
+                <a href="https://www.whatsapp.com">WHATSAPP</a><br>
+                <img src="C:\Users\USER\Downloads\unnamed.png" alt="" width="20px" heigth="15px">
+                <a href="https://www.twitter.com">TWITTER</a><br>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; Copyright 2023. All Rights Reserved. | G SUMAN</p>
+        </footer>
+    
+        <marquee class="scrollright">
+            <b>Thanks for visiting my website</b>
+        </marquee>
+    
+        <script>
+            function toggleSection(sectionId) {
+                var sections = document.querySelectorAll('main > div');
+                
+                sections.forEach(function(section) {
+                    if (section.id === sectionId) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+    </body>
+    </html>
+    
+
+    
